@@ -1,0 +1,16 @@
+.map
+{
+    width:100%;
+    border: 1px solid !important;
+}
+
+.center
+{
+    text-align: center;
+    color: #29bdcd !important;
+}
+
+h3,h4
+{
+    color:#b42cc3;
+}

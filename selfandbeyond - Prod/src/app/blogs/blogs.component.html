@@ -1,0 +1,25 @@
+<div class="blog-tab-container" *ngIf="visibility">
+  <div class="blog-tab" (click)="loadBlog('PLR')">
+      Past Life Regression : A science that heals the ailments of Mind & Body
+  </div>
+</div>
+
+
+
+<div class="blog-content" *ngIf="!visibility">  
+    <div class="backButtonDiv">
+      <a class="backbutton" (click)="onBack()">
+          <span class="glyphicon glyphicon-arrow-left"></span>  Back
+      </a>
+    </div>
+
+    <div [innerHTML]="content"></div>
+
+    <div class="backButtonDiv">
+      <a class="backbutton" (click)="onBack()">
+          <span class="glyphicon glyphicon-arrow-left"></span>  Back
+      </a>
+    </div>
+</div>
+
+

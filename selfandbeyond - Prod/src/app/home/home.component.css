@@ -1,0 +1,120 @@
+.spacing
+{
+    line-height: 2;
+    color:#b42cc3;
+}
+.center
+{
+    text-align: center;
+    color: #29bdcd !important;
+}
+
+
+
+
+
+.mailButton
+{
+    border-radius: 4px;
+    background-color: #29bdcd;
+    color:black; 
+    float: right;
+}
+
+.emailTable
+{
+    width:45%;
+}
+
+.emailTable td
+{
+    padding: 15px;
+}
+
+label
+{
+    color:#D87BE2
+}
+
+span
+{
+    color: red;
+}
+
+input
+{
+    width: 300px;
+}
+
+textarea
+{
+    width: 300px;
+}
+
+.info
+{
+    width:51%;
+    float:right;
+    margin-top:1.5%;
+    color:#29bdcd;
+    font-size: smaller;
+}
+
+.container
+{
+    width:100%;
+}
+
+.detailsEntry
+{
+    float:left;
+}
+
+p
+{
+    text-align: center;
+}
+
+label
+{
+	width:85px;
+}
+
+.blink {
+	-webkit-animation: blink .75s linear infinite;
+	-moz-animation: blink .75s linear infinite;
+	-ms-animation: blink .75s linear infinite;
+	-o-animation: blink .75s linear infinite;
+     animation: blink .75s linear infinite;
+     color:#D87BE2;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}

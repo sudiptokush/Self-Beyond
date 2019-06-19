@@ -1,0 +1,34 @@
+.mainImage
+{
+    margin-top:3%;
+    width:100%;
+}
+.center
+{
+    text-align: center;
+    color: #29bdcd !important;
+}
+.backbutton
+{
+    float:left;
+    width:100%;
+    cursor: pointer;
+}
+.unorderedList
+{
+    list-style-type:disc;
+}
+.backButtonDiv
+{
+    margin-top:1%;
+    height: 25px;
+}
+.content
+{
+    color:#b42cc3;
+}
+
+li
+{
+    list-style-type: circle;
+}

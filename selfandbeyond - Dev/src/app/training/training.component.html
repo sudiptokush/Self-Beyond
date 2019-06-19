@@ -1,0 +1,82 @@
+<div *ngIf="trainingMaster=='show'">
+  <h2 class="center">Training / Workshops</h2>
+
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedTraining('HealYourLife')">
+        <img src="../../assets/img/training/heal-your-life.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Heal Your Life</h3>
+      Trauma, pain, and suffering can affect a family for generations. The issues we struggle with
+      in life—including relationships, health, and career—may be inherited from our parents,
+      grandparents, or even older ancestral lines. Constellations therapy works to energetically
+      untie the knots that bind us to traumatic family events in the past, so we can move toward an
+      unburdened future of renewed potential. <a class="pointer" (click)="selectedTraining('HealYourLife')">....know more</a>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedTraining('FamilyConstellation')">
+        <img src="../../assets/img/training/family-constellation.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Family Constellation</h3>
+      The Systemic Constellations approach (or Family Constellations, as it was originally known) was developed in the late
+      1970s by Bert Hellinger, German psychotherapist, author and philosopher. Now in his eighties, Hellinger continues to
+      be a leading, if somewhat controversial, voice in psychotherapy internationally. <a class="pointer" (click)="selectedTraining('FamilyConstellation')">....know more</a>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedTraining('SoundHealing')">
+        <img src="../../assets/img/training/sound-healing.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Sound Healing</h3>
+      Sound therapists believe that our bodies contain 'energy frequencies' and that sonic frequencies 
+      can be used to reattune these energies when they go off key. All you have to do is lie down and bask 
+      in the tuneful beauty of 'pure' sound.<a class="pointer" (click)="selectedTraining('SoundHealing')">....know more</a>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedTraining('AccessBarConsciousness')">
+        <img src="../../assets/img/training/access-bar-consciousness.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Access Bar Consciousness</h3>
+      Science claims everything in us &amp; around us is energy, so to change any aspect of our life it is important
+      to change the energy<a class="pointer" (click)="selectedTraining('AccessBarConsciousness')">....know more</a>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedTraining('Hypnotherapy')">
+        <img src="../../assets/img/training/hypnotherapy.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Hypnotherapy</h3>
+      Hypnotherapists trained by us in association with EKAA can work with depression, asthma, psoriasis,
+      eczema, allergies, migraine, de addiction, relationship issues , fears phobias, pain management,
+      weight management , eating disorders, dandruff, pimples, acne, back pain, joint pain, arthritis,  nail
+      bitting, laziness, hairfall, PCOD, breathing problem, insomnia, accident and surgical trauma, etc...<a class="pointer" (click)="selectedTraining('Hypnotherapy')">....know more</a>
+    </div>
+  </div>
+
+
+</div>
+<div>
+  <app-training-details (backToMaster)="onBack($event)" ></app-training-details>
+</div>

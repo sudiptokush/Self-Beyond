@@ -1,0 +1,215 @@
+<!--start: Wrapper -->
+<div id="wrapper">
+
+	<!--start: Container -->
+	<div class="container">
+
+
+		<!-- start: Header 
+		<header>
+
+			start: Row 
+			<div class="row">
+
+				 start: Logo  
+				 <div class="logo span4" style="height:121px;width:138px">
+						<img class="brand" src="/assets/img/Logo.png">
+				</div>
+				end: Logo 
+
+				start: Social Links 
+				<div class="socialDiv">
+					<div id="social-links">
+						<ul class="social-small-grid">
+							<li>
+								<div class="social-small-item">
+									<div class="social-small-info-wrap">
+										<div class="social-small-info">
+											<div class="social-small-info-front social-small-facebook">
+												<a href="https://www.facebook.com/Selfandbeyondkol"></a>
+											</div>
+											<div class="social-small-info-back social-small-facebook-hover">
+												<a href="https://www.facebook.com/Selfandbeyondkol"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				end: Social Links 
+
+			</div>
+			end: Row 
+
+		</header>
+		end: Header -->
+
+		<!--start: Navigation Menu-->
+		<nav class = "navbar navbar-default" role = "navigation">
+   
+			<div class = "navbar-header">
+				<button type = "button" class = "navbar-toggle" 
+					data-toggle = "collapse" data-target = "#example-navbar-collapse">
+					<span class = "sr-only">Toggle navigation</span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+					
+				<a class = "navbar-brand">Self & Beyond</a>
+			</div>
+			
+			<div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+				
+				<ul class = "nav navbar-nav">
+					<li ><a (click)="menuClicked('Home')">Home</a></li>
+					<li ><a (click)="menuClicked('About')">About Us</a></li>
+					<li ><a (click)="menuClicked('Sessions')">Sessions</a></li>
+					<li ><a (click)="menuClicked('Training')">Training</a></li>
+					<li ><a (click)="menuClicked('Events')">Events</a></li>
+					<li ><a (click)="menuClicked('Gallery')">Gallery</a></li>
+					<li ><a (click)="menuClicked('Contact')">Contact</a></li>
+					<li ><a (click)="menuClicked('Blogs')">Blogs</a></li>
+				</ul>
+			</div>
+   
+		</nav>
+		<!--end: Navigation Menu-->
+
+	</div>
+	<!--end: Container-->
+
+	<!--start: Container -->
+	<div class="container">
+
+		<!-- start: Carousel -->
+		<carousel>
+			<slide>
+				<img src="assets/img/slider/1.jpg" alt="First slide">
+				<div class="carousel-caption">
+				<h3>Cesare Pavese</h3>
+				<p>We do not remember days, we remember moments.</p>
+				</div>
+			</slide>
+			<slide>
+				<img src="assets/img/slider/2.jpg" alt="Second slide">
+				<div class="carousel-caption">
+				<h3>George Bernard Shaw</h3>
+				<p>Life isn't about finding yourself. Life is about creating yourself</p>
+				</div>
+			</slide>
+			<slide>
+				<img src="assets/img/slider/3.jpg" alt="Third slide">
+				<div class="carousel-caption">
+				<h3>Bertrand Russel</h3>
+				<p>The good life is one inspired by love and guided by knowledge.</p>
+				</div>
+			</slide>
+			<slide>
+				<img src="assets/img/slider/4.jpg" alt="Fourth slide">
+				<div class="carousel-caption">
+				<h3>Conficius</h3>
+				<p>Life is really simple, but we insist on making it complicated.</p>
+				</div>
+			</slide>
+		</carousel>
+		<!-- end: Carousel -->
+
+		<!-- start: Hero Unit -->
+		<div class="hero-unit">
+			<!-- start: wrapper -->
+			<div class="wrapper">
+				<!-- start: main content -->
+				<div id="main-content">
+					<router-outlet></router-outlet>
+				</div>
+				<!-- end: main content -->
+				<!-- start: widget -->
+				<div id="side-widget">
+
+					<!--============================== UPCOMING EVENTS =============================================-->
+					<div class="widgetHeader">
+						UPCOMING EVENTS
+					</div>
+					<div>
+						<img src="../assets/img/upcoming-events/1.png" />
+						<br />
+						<br />
+						<img src="../assets/img/upcoming-events/2.png" />
+						<br />
+						<br />
+						<span class="video-text">
+							In this session you will know how to discover your fullest expression as a male /female /other.
+							How to balance inner Masculine and Feminine, the origin of Masculine and Feminine…and much more.
+						</span>
+						<br />
+						<iframe class="video-frame" src="https://www.youtube.com/embed/GDAmtmym-Rk?ecver=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+						<br />
+						<br />
+						<iframe class="video-frame" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSelfandbeyondkol%2Fvideos%2F1845566212235927%2F&show_text=0" allowFullScreen="true"></iframe>
+					</div>
+					<!--================================================================================================-->
+
+					<!--============================== DIRECTOR & FOUNDER =============================================-->
+					<div class="widgetHeader">
+						DIRECTOR & FOUNDER
+					</div>
+					<div>
+						<a class="widgetSubheader" (click)="toggleDetails('Director')">
+								<img class="detailsIconImage" [src]="updownDirector">
+								Chayanika Bhiwaniwala
+							</a>
+						<div class="detailsContainer" *ngIf="statusDirector == 'open';">
+							 	is the founder of Self and Beyond -A holistic
+								centre for integrated healing and therapies. She is a hypnotherapist(EKAA),
+								Past Life regression therapist(TASSO), NLP practitioner, Family Constellation
+								facilitator, Access Bars practitioner, Sound therapist, Tarot card reader,
+								member of IMDHA and Counsellor. She also conducts various self
+								empowering workshops and is a certified 'Heal Your Life' international
+								workshop leader by Hay House and Louise L. Hay.She is a graduate in
+								Economics Hons. from St.Xaviers college, Kolkata. After years of researching
+								in holistic healing and learning about various modalities, she wants to
+								promote health and wellness from a wide variety of perspectives. She aims
+								to spread the awareness of integrated and non drug healing that considers
+								the holistic and intergrated Modalities. The objective is to guide and motivate
+								individuals to feel better and to cultivate awareness of healthy lifestyle
+								choices and to EMPOWER them with tools and techniques to be co-
+								participant in their own health.
+						</div>
+					</div>
+					<!--================================================================================================-->
+
+					<!--============================== CONTACT US =============================================-->
+					<div class="widgetHeader">
+						CONTACT US
+					</div>
+					<div>
+						<a class="widgetSubheader" (click)="toggleDetails('Contact')">
+								<img class="detailsIconImage" [src]="updownContact">
+								Contact Details
+							</a>
+						<div class="detailsContainer" *ngIf="statusContact == 'open';">
+							<h4>For registration :</h4>
+							Landline : 033-24220003
+							<br /> Mobile : 9007706279
+							<br /> Email: selfandbeyondkolkata@gmail.com
+						</div>
+					</div>
+					<!--================================================================================================-->
+
+				</div>
+				<!-- end: widget -->
+			</div>
+			<!-- end: wrapper -->
+		</div>
+		<!-- end: Hero Unit -->
+
+	</div>
+	<!--end: Container-->
+
+
+
+</div>
+<!-- end: Wrapper  -->

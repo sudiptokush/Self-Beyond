@@ -1,0 +1,62 @@
+.blog-tab {
+    height:100px;
+    line-height: 100px;
+    text-align: center;
+    background: #29bdcd;
+    margin-top: 10px;
+    border: 1px solid rgb(87, 84, 84);
+    color: black;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.blog-content {
+    color:black;
+}
+
+.backButtonDiv{
+    height: 25px;
+    margin: 25px 0px 25px 0px;
+}
+
+.backbutton {
+    float:left;
+    width:100%;
+    cursor: pointer;
+}
+
+.blog-title {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30pt;
+    font-family: cursive;
+    background: #d182da;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.question {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #eac6ef;
+    margin: 20px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+.answer {
+    margin: 0px 10px 0px 10px;
+}
+
+.case-study-title {
+    color:#b42cc3;
+    font-weight: bold;
+    font-size: 16pt;
+    margin: 25px 0px 15px 0px;
+}
+
+.case-study-content {
+    margin: 0px 10px 0px 10px;
+}

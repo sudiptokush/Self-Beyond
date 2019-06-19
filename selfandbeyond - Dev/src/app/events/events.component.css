@@ -1,0 +1,72 @@
+.detailsContent
+{
+    width: 100%;
+    border: solid 1px black;
+}
+
+.detailsContent th,td
+{
+    border: solid 1px black;
+    padding: 15px;
+    text-align: left;  
+}
+
+.eventContainer
+{
+    background-color: #F0CFF4;
+    padding-bottom:1%;
+    margin-bottom: 1%;
+    overflow-x: auto;
+    overflow-y:auto;
+}
+
+.eventDetailsContainer
+{
+    background-color: #D87BE2;
+    width:98%;
+    color:black;
+    margin-left:1%;
+    margin-bottom:1%
+}
+
+.header {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.imageContainer {
+    overflow-x: auto;
+}
+
+.image {
+    float:left;
+    width: 200px;
+    height: 200px;
+    margin-right: 3rem;
+}
+
+.eventHyperlink
+{
+    color: black;
+    font-size: 20px;
+}
+
+.detailsIconImage
+{
+    width:5%;
+}
+
+eventHyperlink:hover {
+    text-decoration: none;
+}
+
+.imageContent img
+{
+    
+}
+
+.center
+{
+  text-align: center;  
+  color: #29bdcd !important;
+}

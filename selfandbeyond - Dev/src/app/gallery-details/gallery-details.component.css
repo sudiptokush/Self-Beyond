@@ -1,0 +1,15 @@
+.galleryDetailsTable td
+{
+    padding:20px !important;
+}
+
+.galleryDetailsDiv
+{
+    overflow-x: auto !important;
+}
+
+.center
+{
+    text-align: center;
+    color: #29bdcd !important;
+}

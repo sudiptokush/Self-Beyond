@@ -1,0 +1,83 @@
+<h2 class="center">Home</h2>
+<p class="spacing">
+    SELF AND BEYOND is a psychotherapy Well Being Center. Here, we offer a
+    spectrum of Physical, Emotional, Mental and Spiritual therapeutic modalities in the
+    form of therapies, wellness and workshops to individuals/groups who may seek to
+    benefit from them. We conduct regular Psychotherapy sessions, zumba and yoga
+    sessions for fitness and movement therapy and meditation sessions for the soul. We
+    offer one to one Psychotherapy sessions using the tools of regression therapy,
+    hypnotherapy, sound therapy, nlp, family constellation and various other therapeutic
+    modalities on appointment basis. We keep having healing, mind empowering and
+    skill development workshops too.
+</p>
+
+<p class="spacing">
+    We are also an association of independent holistic healers and health practitioners,
+    united by a common mission and vision of a wider model of integrated healing that
+    addresses the WHOLE person. The EMPHASIS is on personal growth and self
+    empowerment to live a more balanced, harmonious and healthy life. We also offer
+    our space to conduct similar workshops or therapies for groups/individuals.
+</p>
+    
+<p class="spacing">
+    Call us at 9007706279/9831052297 for more details visit <a target="_blank" href="https://www.facebook.com/Selfandbeyondkol/">here</a>.
+</p>
+<br />
+<br />
+<br />
+
+<form (submit)="sendEmail(body)" ngNativeValidate>
+    <div class="container">
+        <div class="detailsEntry">
+        <table class="emailTable">
+            <tr>
+            <td>
+                <label>Name <span>*</span></label>
+            </td>
+            <td class="entryColumn">
+                <input type="text" required name="name" [(ngModel)]="body.name">
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <label>Mobile <span>*</span></label>
+            </td>
+            <td class="entryColumn">
+                <input type="text" pattern="[0-9]*" required name="mobile" minlength="10" maxlength="10" [(ngModel)]="body.mobile">
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <label>Email <span>*</span></label>
+            </td>
+            <td class="entryColumn">
+                <input type="email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" name="email" [(ngModel)]="body.email">
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <label>Message</label>
+            </td>
+            <td>
+                <textarea rows="6" name="message" [(ngModel)]="body.message"></textarea>
+            </td>
+            </tr>
+            <tr>
+            <td colspan="2">
+                <button type="submit" class="mailButton">Register</button>
+            </td>
+            </tr>
+        </table>
+        </div>
+        <div class="info">
+            <p class="blink">LIMITED TIME OFFER</p>  
+            <br />
+            <p>Get exciting offers and discounts by registering with us.</p>
+            <br />  
+            <p>You will get a call or email from us and we will inform you about the discounts and offers
+            you will receive. If you have any preferable time please let us know in the message box</p> 
+        </div>
+    </div>
+</form>
+
+

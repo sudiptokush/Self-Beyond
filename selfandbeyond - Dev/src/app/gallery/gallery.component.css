@@ -1,0 +1,17 @@
+.pointer
+{
+    cursor: pointer;
+}
+.center
+{
+    text-align: center;
+    color: #29bdcd !important;
+}
+.border
+{
+    border: 3px solid #b42cc3;
+}
+.marqueeMargin
+{
+    margin: 6px 6px 0 6px;
+}

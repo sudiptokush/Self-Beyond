@@ -1,0 +1,99 @@
+.wrapper { 
+  overflow:hidden;
+}
+
+.wrapper div {
+   padding: 10px;
+}
+
+#main-content {
+  background-color: white;
+  float:left; 
+  padding-top:0;
+  width:75%;
+  
+}
+
+#side-widget { 
+  background-color: white;
+  overflow:hidden;
+  min-width:55px;
+}
+
+.slideCaptionHeader
+{
+  color: #f6f6f6;
+}
+
+.mainContentRouterLink
+{
+  display:initial;
+}
+
+.widgetHeader
+{
+  background-color: #29bdcd ; 
+  padding:5px;
+  border:solid 1px black;
+  font-size: 20px;
+  color:white; 
+  margin:0 auto; 
+  text-align:center
+}
+
+.widgetSubheader
+{
+  color: #b42cc3;;
+  font-size: 16px;
+}
+
+.detailsIconImage
+{
+  width:9%;
+  margin-bottom: 1%;
+}
+
+.detailsContainer
+{
+  background-color: white; 
+  width:95%;
+  color:black;
+  font-size:13px;
+}
+
+.video-frame
+{
+  width: 284px;
+  border: 1px solid;
+}
+
+.video-text
+{
+  font-size: 9pt;
+}
+
+img
+{
+  width:100%;
+}
+
+h3
+{
+  color:white;
+}
+
+p
+{
+  font-size:65% !important;
+}
+
+a
+{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+   #main-content { 
+    width:100%;    
+  }
+}

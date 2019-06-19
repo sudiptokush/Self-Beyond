@@ -1,0 +1,38 @@
+.center
+{
+    text-align: center;
+    color: #29bdcd !important;
+}
+.pointer
+{
+    cursor: pointer;
+}
+.image
+{
+    float:left;
+    margin-top: 5%;
+    width:49%;
+    min-width:350px;
+}
+.imgStyle
+{
+    border: 2px solid black;
+    width:100%;
+}
+.content
+{
+    margin-top: 3%;
+    vertical-align: top;
+    width:50%;
+    min-width:290px;
+    float:right;
+}
+.wrapper
+{
+    overflow:hidden;
+}
+
+.content
+{
+    color:#b42cc3;
+}

@@ -1,0 +1,27 @@
+.mainImage
+{
+    margin-top:3%;
+    width:100%;
+}
+.center
+{
+    text-align: center;
+    color: #29bdcd !important;
+}
+.pointer
+{
+    cursor: pointer;
+}
+.unorderedList
+{
+    list-style-type:disc;
+}
+.backButtonDiv
+{
+    margin-top:1%;
+}
+.content
+{
+    color:#b42cc3;
+}
+

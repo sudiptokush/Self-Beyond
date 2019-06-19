@@ -1,0 +1,237 @@
+<div *ngIf="sessionMaster=='show'">
+  <h2 class="center">Sessions</h2>
+
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('Hypnotherapy')">
+        <img src="../../assets/img/sessions/hypnotherapy.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Hypnotherapy</h3>
+      Hypnotherapy is a form of psychotherapy used to create subconscious change in a patient in the form of new responses, thoughts,
+      attitudes, behaviors or feelings. <a class="pointer" (click)="selectedSession('Hypnotherapy')">....know more</a>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('PastLifeRegression')">
+        <img src="../../assets/img/sessions/PLR.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Past Life Regression</h3>
+      Past life regression (PLR) is the alleged journeying into one&#39;s past lives while hypnotized. This is the
+      process in which an altered state of consciousness is induced in order to help a person to relive
+      experiences from past lives.<a class="pointer" (click)="selectedSession('PastLifeRegression')">....know more</a>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('FamilyContellation')">
+        <img src="../../assets/img/sessions/family-constellation.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Family Constellation</h3>
+      Family Constellations, also known as Systemic Constellations and Systemic Family
+      Constellations, is an  alternative  therapeutic method which draws on elements of family systems
+      therapy,  existential phenomenology  and  Zulu  attitudes to family. <a class="pointer" (click)="selectedSession('FamilyContellation')">....know more</a>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('InnerChildWork')">
+        <img src="../../assets/img/sessions/inner-child-work.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">InnerChildWork</h3>
+      Are you outwardly successful but inwardly feel like a big kid? Do you aspire to be a loving parent but all too often “lose it”
+      in hurtful ways? Do you crave intimacy but sometimes wonder if it’s worth the struggle? Are you plagued by constant
+      vague feelings of anxiety or depression? <a class="pointer" (click)="selectedSession('InnerChildWork')">....know more</a>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('SoundHealing')">
+        <img src="../../assets/img/sessions/sound-healing.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Sound Healing</h3>
+      Sound Healing is an effective and proven modality that uses vibrational sound to help reduce stress, alter consciousness
+      and create a deep sense of peace, well being and better health. Sound has also been shown to be a vital part of the
+      healing process for cancer patients undergoing chemotherapy and side effects especially for pain relief management.
+      <a class="pointer" (click)="selectedSession('SoundHealing')">....know more</a>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('AccessBarConsciousness')">
+        <img src="../../assets/img/sessions/access-bar-consciousness.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Access Bar Consciousness</h3>
+      The Bars can be the starting point of a great adventure and they can be
+      something you add to your life that will assist you in creating a greater ease
+      with everything.
+      <a class="pointer" (click)="selectedSession('AccessBarConsciousness')">....know more</a>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('NLP')">
+        <img src="../../assets/img/sessions/nlp.jpg" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">NLP</h3>
+      NLP stands for Neuro-Linguistic Programming, a name that encompasses the three most influential components involved in producing
+      human experience: neurology, language and programming. The neurological system regulates how our bodies function, language
+      determines how we interface and communicate with other people and our programming determines the kinds of models of
+      the world we create. Neuro-Linguistic Programming describes the fundamental dynamics between mind (neuro) and language
+      (linguistic) and how their interplay affects our body and behavior (programming). <a class="pointer" (click)="selectedSession('NLP')">....know more</a>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('Tarot')">
+        <img src="../../assets/img/sessions/tarot.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Tarot</h3>
+      Tarot is not intended to answer specific yes or no questions. Most say it also shouldn’t be used to make decisions, but instead
+      should be used as a guide to help you make the decision yourself. Learn to know the inner workings of your mind that
+      affect your health,finances,relationships and decisions through the ancient art and science of tarot. <a class="pointer"
+        (click)="selectedSession('Tarot')">....know more</a>
+    </div>
+  </div>
+
+</div>
+<div>
+  <app-session-details (backToMaster)="onBack($event)" ></app-session-details>
+</div>
+
+
+
+
+
+
+<!-- <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('Accupressure')">
+        <img src="../../assets/img/sessions/accupressure.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Accupressure</h3>
+      Acupressure is an ancient art of healing self and others by stimulating body’s natural self-curative abilities. It is the
+      most effective method of self-treatment of various types of ailments by using the power and sensitivity of the human
+      hand. It deals with all aspects of a person as a whole: body, emotions, mind and spirit as one, and not as separate
+      parts. It balances the vital life forces of the body. <a class="pointer" (click)="selectedSession('Accupressure')">....know more</a>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('SkinCare')">
+        <img src="../../assets/img/sessions/skin-care.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Beauty & Skin Care</h3>
+      Learn the detailed tips and tricks of makeup beauty and skincare <a class="pointer" (click)="selectedSession('SkinCare')">....know more</a>
+    </div>
+  </div> 
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('HairStyling')">
+        <img src="../../assets/img/sessions/hair-style.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Hair Styling</h3>
+      Learn the detailed tips and tricks of hair styling and learn how to keep you hair healthy. <a class="pointer" (click)="selectedSession('HairStyling')">....know more</a>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('HandwritingAnalysis')">
+        <img src="../../assets/img/sessions/handwriting-analysis.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Handwriting Analysis</h3>
+      Handwriting analysis is an effective and reliable indicator of personality and behaviour, and so is a useful tool for many
+      organizational processes, for example: recruitment, interviewing and selection, team-building, counselling, and career-planning.
+      <a class="pointer" (click)="selectedSession('HandwritingAnalysis')">....know more</a>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('Meditation')">
+        <img src="../../assets/img/sessions/meditation.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content" style="margin-top:6% !important"></div>
+    <h3 class="center">Meditation</h3>
+    With meditation, the physiology undergoes a change and every cell in the body is filled with more prana (energy). This results
+    in joy, peace, enthusiasm as the level of prana in the body increases. <a class="pointer" (click)="selectedSession('Meditation')">....know more</a>
+  </div>
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('Yoga')">
+        <img src="../../assets/img/sessions/yoga.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Yoga</h3>
+      Yoga is a 5000 year old Indian body of knowledge. Though many think of yoga only as a physical exercise where people twist,
+      turn, stretch, and breathe in the most complex ways, these are actually only the most superficial aspect of this profound
+      science of unfolding the infinite potentials of the human mind and soul.<a class="pointer" (click)="selectedSession('Yoga')">....know more</a>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('SelfDefence')">
+        <img src="../../assets/img/sessions/self-defence.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Self Defence</h3>
+      If you can relate to the emotion of insecurity or vulnerability, help us help you defend yourself and the ones you care for.
+      The knowledge of proper self defense techniques could be the answer to the dilemma. It can make modern day living safe,
+      comfortable and peaceful. The training aims to help its participants gain confidence to handle uncomfortable situations,
+      guide their loved ones to safety and to cope with circumstances calmly.
+      <a class="pointer" (click)="selectedSession('SelfDefence')">....know more</a>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="image">
+      <a class="pointer" (click)="selectedSession('HealYourLife')">
+        <img src="../../assets/img/sessions/heal-your-life.jpg" width="300" height="300" class="imgStyle"/>
+      </a>
+    </div>
+    <div class="content">
+      <h3 class="center">Heal Your Life, Love Yorself</h3>
+      This workshop, originally developed by LOUISE L. HAY based on her book, ‘YOU CAN HEAL YOUR LIFE” can serve as “a stepping
+      stone” on your pathway of self-discovery. You will be gently and skillfully guided towards a realization of your own
+      power, inner wisdom and strengths, which will help you to achieve the life of joy, happiness, prosperity and health
+      you deserve. <a class="pointer" (click)="selectedSession('HealYourLife')">....know more</a>
+    </div>
+  </div> -->

@@ -1,0 +1,39 @@
+<h2 class="center"> Gallery </h2>
+<div class="border">
+<marquee behavior="alternate" direction="left" class="marqueeMargin">
+
+    <a class="pointer" (click)="loadContent('HealYourLife')"> 
+            <img src="assets/img/gallery/HealYourLife/1.jpg" width="240" height="200" />  
+    </a>
+
+    <a class="pointer" (click)="loadContent('Dessert')">
+            <img src="assets/img/gallery/Dessert/1.jpg" width="240" height="200" />         
+    </a>            
+
+    <a class="pointer" (click)="loadContent('AsianMartialDance')">
+            <img src="assets/img/gallery/AsianMartialDance/1.jpg" width="240" height="200" />         
+    </a>
+
+    <a class="pointer" (click)="loadContent('CombatArt')">
+            <img src="assets/img/gallery/CombatArt/1.jpg" width="240" height="200" />
+    </a>
+
+    <a class="pointer" (click)="loadContent('ConstellationTraining')">  
+            <img src="assets/img/gallery/ConstellationTraining/1.jpg" width="240" height="200" /> 
+    </a>
+
+    <a class="pointer" (click)="loadContent('IntegratedHealing')">    
+            <img src="assets/img/gallery/IntegratedHealing/1.jpg" width="240" height="200" />  
+    </a>
+
+    <a class="pointer" (click)="loadContent('PlayTherapy')">
+            <img src="assets/img/gallery/PlayTherapy/1.jpg" width="240" height="200" />
+    </a>
+
+    <a class="pointer" (click)="loadContent('SuryaNamaskar')">     
+            <img src="assets/img/gallery/SuryaNamaskar/1.jpg" width="240" height="200" />
+    </a>
+    
+</marquee>
+</div>
+<app-gallery-details [sessionName]="sessionName" [sessionTitle]="sessionTitle"></app-gallery-details>

@@ -1,0 +1,54 @@
+<form (submit)="sendEmail(body)" ngNativeValidate>
+  <div class="container">
+    <div class="detailsEntry">
+      <table class="emailTable">
+        <tr>
+          <td>
+            <label>Name <span>*</span></label>
+          </td>
+          <td class="entryColumn">
+            <input type="text" required name="name" [(ngModel)]="body.name">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Mobile <span>*</span></label>
+          </td>
+          <td class="entryColumn">
+            <input type="text" pattern="[0-9]*" required name="mobile" minlength="10" maxlength="10" [(ngModel)]="body.mobile">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Email <span>*</span></label>
+          </td>
+          <td class="entryColumn">
+            <input type="email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" name="email" [(ngModel)]="body.email">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Message</label>
+          </td>
+          <td>
+            <textarea rows="6" name="message" [(ngModel)]="body.message"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="submit" class="mailButton">Register</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="info">
+        <p class="blink">LIMITED TIME OFFER</p>  
+        <br />
+        <p>Get exciting offers and discounts by registering with us.</p>
+        <br />  
+        <p>You will get a call or email from us and we will inform you about the discounts and offers
+          you will receive. If you have any preferable time please let us know in the message box</p> 
+    </div>
+  </div>
+  </form>
+  
