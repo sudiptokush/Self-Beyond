@@ -9,7 +9,7 @@ import {TrainingDetailsComponent} from '../training-details/training-details.com
 })
 export class TrainingComponent implements OnInit {
 
-  @ViewChild(TrainingDetailsComponent) trainingDetails: TrainingDetailsComponent;
+  @ViewChild(TrainingDetailsComponent, {static: false}) trainingDetails: TrainingDetailsComponent;
   trainingMaster = 'show';
   backButtonDisplay;
 

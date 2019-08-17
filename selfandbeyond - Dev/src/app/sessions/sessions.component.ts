@@ -9,7 +9,7 @@ import {SessionDetailsComponent} from '../session-details/session-details.compon
 })
 export class SessionsComponent implements OnInit {
 
-  @ViewChild(SessionDetailsComponent) sessionDetails: SessionDetailsComponent;
+  @ViewChild(SessionDetailsComponent, {static: false}) sessionDetails: SessionDetailsComponent;
   sessionMaster = 'show';
   backButtonDisplay;
 
