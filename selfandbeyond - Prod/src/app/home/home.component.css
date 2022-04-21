@@ -21,14 +21,10 @@
     float: right;
 }
 
-.emailTable
-{
-    width:45%;
-}
 
 .emailTable td
 {
-    padding: 15px;
+    padding: 14px 0;
 }
 
 label
@@ -41,34 +37,31 @@ span
     color: red;
 }
 
-input
+.container
 {
-    width: 300px;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-textarea
-{
-    width: 300px;
+.emailTable {
+	width: 45%;
+}
+
+input, textarea{
+	width:90%;
+	border: 1px solid black;
 }
 
 .info
 {
-    width:51%;
-    float:right;
+	width: 40%;
     margin-top:1.5%;
     color:#29bdcd;
     font-size: smaller;
 }
 
-.container
-{
-    width:100%;
-}
 
-.detailsEntry
-{
-    float:left;
-}
 
 p
 {
@@ -79,6 +72,20 @@ label
 {
 	width:85px;
 }
+
+@media screen and (max-width: 1000px) {
+	.container
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.emailTable {
+		width: 100%;
+	}
+	.info {
+		width: 100%
+	}
+ }
 
 .blink {
 	-webkit-animation: blink .75s linear infinite;

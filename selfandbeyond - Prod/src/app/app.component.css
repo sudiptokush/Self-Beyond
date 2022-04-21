@@ -1,95 +1,89 @@
-.wrapper { 
-  overflow:hidden;
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
 }
 
 .wrapper div {
-   padding: 10px;
+  padding: 10px;
 }
 
 #main-content {
   background-color: white;
-  float:left; 
-  padding-top:0;
-  width:75%;
-  
+  padding-top: 0;
+  width: 70%;
 }
 
-#side-widget { 
+#side-widget {
   background-color: white;
-  overflow:hidden;
-  min-width:55px;
+  width: 30%;
 }
 
-.slideCaptionHeader
-{
+.slideCaptionHeader {
   color: #f6f6f6;
 }
 
-.mainContentRouterLink
-{
-  display:initial;
+.mainContentRouterLink {
+  display: initial;
 }
 
-.widgetHeader
-{
-  background-color: #29bdcd ; 
-  padding:5px;
-  border:solid 1px black;
+.widgetHeader {
+  background-color: #29bdcd;
+  padding: 5px;
+  border: solid 1px black;
   font-size: 20px;
-  color:white; 
-  margin:0 auto; 
-  text-align:center
+  color: white;
+  margin: 0 auto;
+  text-align: center
 }
 
-.widgetSubheader
-{
-  color: #b42cc3;;
-  font-size: 16px;
+.widgetSubheader {
+  color: #b42cc3;
+  ;
+  font-size: 1.2em;
 }
 
-.detailsIconImage
-{
-  width:9%;
+.detailsIconImage {
+  width: 1.1em;
   margin-bottom: 1%;
 }
 
-.detailsContainer
-{
-  background-color: white; 
-  width:95%;
-  color:black;
-  font-size:13px;
+.detailsContainer {
+  background-color: white;
+  width: 95%;
+  color: black;
+  font-size: 1em;
 }
 
-.video-frame
-{
-  width: 284px;
+.video-frame {
+  width: 100%;
+  height: auto;
   border: 1px solid;
+  margin: 5% 0;
 }
 
-.video-text
-{
-  font-size: 9pt;
+.video-text {
+  font-size: .8em;
 }
 
-img
-{
-  width:100%;
+img {
+  width: 100%;
 }
 
-h3
-{
-  color:white;
+h3 {
+  color: white;
 }
 
-p
-{
-  font-size:65% !important;
+p {
+  font-size: 65% !important;
 }
 
-a
-{
+a {
   cursor: pointer;
+}
+
+::ng-deep .carousel.slide {
+  margin: 0 7%;
 }
 
 ::ng-deep .carousel-indicators {
@@ -97,7 +91,30 @@ a
 }
 
 @media screen and (max-width: 600px) {
-   #main-content { 
-    width:100%;    
+  #main-content {
+    width: 100%;
+  }
+
+  ::ng-deep .carousel.slide {
+    margin: 0 0%;
+  }
+}
+
+@media screen and (max-width: 851px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main-content {
+    width: 100%;
+  }
+
+  #side-widget {
+    width: 100%;
+  }
+
+  .video-frame {
+    height: 240px;
   }
 }

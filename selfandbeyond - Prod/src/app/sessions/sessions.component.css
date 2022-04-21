@@ -9,10 +9,8 @@
 }
 .image
 {
-    float:left;
     margin-top: 5%;
-    width:49%;
-    min-width:350px;
+    width:50%;
 }
 .imgStyle
 {
@@ -23,16 +21,26 @@
 {
     margin-top: 3%;
     vertical-align: top;
-    width:50%;
-    min-width:290px;
-    float:right;
+    width:45%;
 }
 .wrapper
 {
-    overflow:hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .content
 {
     color:#b42cc3;
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .image, .content {
+        width: 100%
+    }
 }
