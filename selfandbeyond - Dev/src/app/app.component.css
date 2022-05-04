@@ -82,10 +82,6 @@ a {
   cursor: pointer;
 }
 
-::ng-deep .carousel.slide {
-  margin: 0 7%;
-}
-
 ::ng-deep .carousel-indicators {
   display: none !important;
 }
@@ -93,10 +89,6 @@ a {
 @media screen and (max-width: 600px) {
   #main-content {
     width: 100%;
-  }
-
-  ::ng-deep .carousel.slide {
-    margin: 0 0%;
   }
 }
 
