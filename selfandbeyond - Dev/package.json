@@ -4,11 +4,11 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng serve",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng build",
+    "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -16,7 +16,6 @@
     "@angular/compiler": "^8.2.2",
     "@angular/core": "^8.2.2",
     "@angular/forms": "^8.2.2",
-    "@angular/http": "^7.2.15",
     "@angular/platform-browser": "^8.2.2",
     "@angular/platform-browser-dynamic": "^8.2.2",
     "@angular/router": "^8.2.2",
@@ -35,6 +34,7 @@
     "@types/node": "~12.7.2",
     "bootstrap": "^4.3.1",
     "codelyzer": "^5.0.1",
+    "cross-env": "^7.0.3",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "jquery": "^3.5.1",

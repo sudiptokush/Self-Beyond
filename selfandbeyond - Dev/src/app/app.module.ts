@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -22,6 +21,7 @@ import {EmailHelperService} from './email-helper.service';
 import { BlogsComponent } from './blogs/blogs.component';
 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,8 +42,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
     Routing,
+    HttpClientModule,
     CarouselModule
   ],
   providers: [EmailHelperService, {provide: LocationStrategy, useClass: HashLocationStrategy}],

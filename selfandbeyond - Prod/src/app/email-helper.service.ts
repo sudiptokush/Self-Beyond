@@ -1,32 +1,32 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
-import { Resolve } from '@angular/router';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Observable, throwError } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 
 export interface IMessage {
-  name?: string,
-  email?: string,
-  mobile?:string,
-  message?: string
+  name?: string;
+  email?: string;
+  mobile?: string;
+  message?: string;
 }
 
 @Injectable()
 export class EmailHelperService {
 
-  private emailUrl = './email/emailHelper.php';
-  constructor(private http: Http) { }
+  private emailUrl = '/email/emailHelper.php';
 
-  sendEmail(message: IMessage): Observable<IMessage> | any {
-    return this.http.post(this.emailUrl, message)
-      .map(response => {
-        //console.log('Sending email was successfull', response);
+  constructor(private http: HttpClient) {}
+
+  sendEmail(message: IMessage): Observable<IMessage> {
+    return this.http.post<IMessage>(this.emailUrl, message).pipe(
+      map((response: IMessage) => {
+        // console.log('Mail Sent', response);
         return response;
+      }),
+      catchError((error: HttpErrorResponse) => {
+        // console.log('Failed', error);
+        return throwError(() => error);
       })
-      .catch(error => {
-        //console.log('Sending email got error', error);
-        return Observable.throw(error)
-      })
+    );
   }
 }
