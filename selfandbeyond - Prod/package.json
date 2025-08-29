@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng serve",
-    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng build",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng build --prod",
     "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng test",
     "lint": "ng lint",
     "e2e": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng e2e"
